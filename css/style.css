@@ -14,7 +14,8 @@
         --awesome: #E59BE9;
         --mainBoxShadow: 0 8px 20px 10px var(--alternative);
         --borderColor: #8644A2;
-        --elementShadow: .2vw .3vw .2vw #FFEBB2;   
+        --elementShadow: .2vw .3vw .2vw #FFEBB2;  
+        --bgHeaderFooter: black;
 }
 
 @property --top-left{
@@ -40,3 +41,28 @@
     inherits: false;
     initial-value: 0%;
 }
+
+/* Navbar & footer */
+:is(.navbar, footer){
+    background-color: var(--bgHeaderFooter);
+}
+
+/* Navbar */
+img[alt='logo']{
+    width: 8rem;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Navbar */
+:is(.nav-link) {
+    color: var(--secondary);
+}
+
+
+
+
+
+
+
