@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* custom variables */
+:root{
+        --primary: black;
+        --secondary: white;
+        --alternative: red;
+        --awesome: #E59BE9;
+        --mainBoxShadow: 0 8px 20px 10px var(--alternative);
+        --borderColor: #8644A2;
+        --elementShadow: .2vw .3vw .2vw #FFEBB2;   
+}
+
+@property --top-left{
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 50%;
+}
+
+@property --top-right{
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 50%;
+}
+
+@property --bottom-left{
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0%;
+}
+
+@property --bottom-right{
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0%;
+}
