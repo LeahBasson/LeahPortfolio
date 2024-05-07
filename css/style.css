@@ -148,7 +148,7 @@ div .star{
 .stars div:nth-child(2)
 {
    top: 90%;
-   left: 80%;
+   left: 50%;
     animation: animate 10s linear infinite;
 }
 
@@ -163,7 +163,7 @@ div .star{
 {
    top: 60%;
    left: 40%;
-    animation: animate 1s linear infinite;
+    animation: animate 9s linear infinite;
 }
 
 .stars div:nth-child(5)
@@ -177,7 +177,7 @@ div .star{
 {
    top: 40%;
    left: 5%;
-    animation: animate 2s linear infinite;
+    animation: animate 6s linear infinite;
 }
 
 .stars div:nth-child(7)
@@ -240,14 +240,14 @@ div .star{
 {
    top: 80%;
    left: 70%;
-    animation: animate 3s linear infinite;
+    animation: animate 10s linear infinite;
 }
 
 .stars div:nth-child(16)
 {
    top: 10%;
    left: 70%;
-    animation: animate 3s linear infinite;
+    animation: animate 7s linear infinite;
 }
 
 .stars div:nth-child(17)
@@ -268,13 +268,48 @@ div .star{
 {
    top: 80%;
    left: 60%;
-    animation: animate 2s linear infinite;
+    animation: animate 5s linear infinite;
 }
 
 .stars div:nth-child(20)
 {
    top: 50%;
    left: 80%;
+    animation: animate 9s linear infinite;
+}
+
+.stars div:nth-child(21)
+{
+   top: 90%;
+   left: 30%;
+    animation: animate 9s linear infinite;
+}
+
+.stars div:nth-child(22)
+{
+   top: 90%;
+   left: 10%;
+    animation: animate 9s linear infinite;
+}
+
+.stars div:nth-child(23)
+{
+   top: 20%;
+   left: 7%;
+    animation: animate 9s linear infinite;
+}
+
+.stars div:nth-child(24)
+{
+   top: 60%;
+   left: 70%;
+    animation: animate 9s linear infinite;
+}
+
+.stars div:nth-child(25)
+{
+   top: 30%;
+   left: 95%;
     animation: animate 9s linear infinite;
 }
 
@@ -291,7 +326,7 @@ div .star{
 }
 
 .banner{
-    width: 70vw;
+    width: 71vw;
     height: 70vh;
     background-color: transparent;
     z-index: 2;
@@ -310,19 +345,22 @@ img[alt='leah']{
 }
 
 .Greeting{
-    width: 48vw;
-    height: 40vh;
+    width: 80vw;
+    height: 50vh;
     background-color: transparent;
     order: 1;
     text-align: start;
+    margin-left: 35px;
 }
 
 .Greeting h1{
     font-family: "Lato", sans-serif;
+    font-size: 3.4rem;
 }
 
 .Greeting h1 span{
    font-family: "Montserrat", sans-serif;
+   font-size: 4rem;
 }
 
 .Greeting h3{
@@ -392,28 +430,57 @@ img[alt='leah']{
     }
 }
 
-/* Resume */
+/* Resume Section*/
 #resume{
-    height: 50vh;
+    height: 100vh;
     background-color: var(--primary);
     font-family: "Inria Serif";
     text-align: center;
 }
 
-#resume h3{
+.resText{
+    width: 70vw;
+    height: 80vh;
+    background-color: transparent;
+    margin: auto;
     text-align: left;
-    color: var(--alternative);
+    font-family: "Montserrat", sans-serif;
 }
 
 
+#resume h4{
+  color: var(--alternative); 
+}
 
+#resume p{
+    color: var(--secondary);
+    font-size: 20px;
+}
+
+.btnResume{
+    background-color: transparent;
+    border: 2px solid var(--alternative);
+    color: var(--secondary);
+    padding: 8px 30px;
+    font-size: 18px;
+}
+
+.btnResume:hover{
+    background-color: var(--alternative);
+    border: 2px solid var(--secondary);
+}
+
+.btnResume a{
+    text-decoration: none;
+    color: var(--secondary);
+}
 
 /* Media query */
 @media (width < 999px)
 {
     #home{
         width: 100%;
-        height: 110vh;
+        height: 100vh;
     }
     
     .stars{
@@ -463,7 +530,7 @@ img[alt='leah']{
     }
 
     #about{
-        height: 90vh;
+        height: 75vh;
     }
 
     #about p{
@@ -472,5 +539,20 @@ img[alt='leah']{
         font-size: 17px;
     }
    
+    #resume{
+        height: 110vh;
+    }
+    .resText{
+        width: 80vw;
+        text-align: center;
+    }
+
+    #resume h4{
+        font-size: 20px;
+    }
+
+    #resume p{
+        font-size: 17px;
+    }
 }
 
