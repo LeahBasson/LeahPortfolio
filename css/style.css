@@ -395,13 +395,21 @@ img[alt='leah']{
 
 .lnk i:hover{
     color: var(--alternative);
+    cursor: pointer;
+}
+
+/* Heading & Content Fonts */
+.secHeading{
+    font-family: "Inria Serif";
+}
+.sectionP{
+    font-family: "Montserrat", sans-serif;
 }
 
 /* About Section */
 #about{
     height: 50vh;
     background-color: var(--primary);
-    font-family: "Inria Serif";
     text-align: center;
 }
 
@@ -414,7 +422,6 @@ img[alt='leah']{
 #about p{
     width: 70vw;
     font-size: 20px;
-   font-family: "Montserrat", sans-serif;
     height: 32vh;
     margin: auto;
 }
@@ -434,7 +441,6 @@ img[alt='leah']{
 #resume{
     height: 100vh;
     background-color: var(--primary);
-    font-family: "Inria Serif";
     text-align: center;
 }
 
@@ -444,7 +450,6 @@ img[alt='leah']{
     background-color: transparent;
     margin: auto;
     text-align: left;
-    font-family: "Montserrat", sans-serif;
 }
 
 
@@ -474,6 +479,31 @@ img[alt='leah']{
     text-decoration: none;
     color: var(--secondary);
 }
+
+#skills{
+    height: 100vh;
+    background-color: transparent;
+}
+
+.skillsText{
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    text-align: left;
+}
+
+#skills h4{
+    color: var(--alternative);
+}
+
+#skills span{
+    color: var(--primary);
+}
+
+#skills p{
+    font-size: 18px;
+}
+
 
 /* Media query */
 @media (width < 999px)
@@ -534,7 +564,7 @@ img[alt='leah']{
     }
 
     #about p{
-        width: 75vw;
+        width: 80vw;
         height: 50vh;
         font-size: 17px;
     }
@@ -553,6 +583,15 @@ img[alt='leah']{
 
     #resume p{
         font-size: 17px;
+    }
+
+    #skills{
+        height: 160vh;
+    }
+
+    .skillsText{
+        width: 80vw;
+        text-align: center;
     }
 }
 
