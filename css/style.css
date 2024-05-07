@@ -16,7 +16,7 @@
         --secondary: white;
         --alternative: rgb(255, 0, 26);
         --awesome: #E59BE9;
-        --mainBoxShadow: 0 8px 20px 10px var(--alternative);
+        --mainBoxShadow: .5vw .5vw .3vw var(--alternative), inset .8vw 1vw .2vw var(--secondary), 1vw 1vw .2vw var(--secondary); 
         --borderColor: #8644A2;
         --elementShadow: .2vw .3vw .2vw #FFEBB2;  
         --bgHeaderFooter: black;
@@ -89,7 +89,7 @@ section {
     scroll-margin-block: 5rem;
 }
 
-/* Footer */
+/* Home Section */
 
 #home{
     height: 90vh;
@@ -104,7 +104,7 @@ section {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 0, 26)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
 
-/* banner */
+/* banner animation*/
   .stars{
     position: absolute;
     width: 100%;
@@ -305,7 +305,7 @@ img[alt='leah']{
     width: 22rem;
     object-fit: cover;
     object-position: center;
-    border: 3px solid var(--secondary);
+    box-shadow: var(--mainBoxShadow);
     order: 0;
 }
 
@@ -327,7 +327,7 @@ img[alt='leah']{
 
 .Greeting h3{
     font-size: 4rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Inria Sans" , sans-serif;
     color: transparent;
     -webkit-text-stroke: 3px var(--alternative);
     position: relative;
@@ -359,12 +359,46 @@ img[alt='leah']{
     color: var(--alternative);
 }
 
+/* About Section */
+#about{
+    height: 50vh;
+    background-color: var(--primary);
+    font-family: "Inria Serif";
+    text-align: center;
+}
+
+#about .fadeInUp{
+    animation-name: fadeInUp;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
+
+#about p{
+    width: 70vw;
+    font-size: 20px;
+   font-family: "Montserrat", sans-serif;
+    height: 32vh;
+    margin: auto;
+}
+
+@keyframes fadeInUp{
+    from {
+        transform: translate3d(0,40px,0);
+        opacity: 0;
+    }
+    to{
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+
 /* Media query */
 @media (width < 999px)
 {
     #home{
         width: 100%;
-        height: 100vh;
+        height: 110vh;
     }
     
     .stars{
@@ -406,11 +440,21 @@ img[alt='leah']{
     .Greeting h3{
         font-size: 1.7rem;
         text-align: center;
-        font-weight: 300;
+        font-weight: 100;
     }
 
     .Greeting h3::before{
        display: none;
+    }
+
+    #about{
+        height: 90vh;
+    }
+
+    #about p{
+        width: 75vw;
+        height: 50vh;
+        font-size: 17px;
     }
    
 }
