@@ -367,7 +367,7 @@ img[alt='leah']{
     text-align: center;
 }
 
-#about .fadeInUp{
+.fadeInUp{
     animation-name: fadeInUp;
     animation-duration: 5s;
     animation-fill-mode: both;
@@ -391,6 +391,21 @@ img[alt='leah']{
         opacity: 1;
     }
 }
+
+/* Resume */
+#resume{
+    height: 50vh;
+    background-color: var(--primary);
+    font-family: "Inria Serif";
+    text-align: center;
+}
+
+#resume h3{
+    text-align: left;
+    color: var(--alternative);
+}
+
+
 
 
 /* Media query */
