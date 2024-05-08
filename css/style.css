@@ -65,11 +65,11 @@ img[alt='logo']{
 }
 
 /* Navbar */
-.nav-link:hover{
+.navbar-nav .nav-link:hover{
     color: var(--alternative);
 }
 
-.nav-link{
+.navbar-nav .nav-link{
     font-family: "Roboto", sans-serif;
     color: var(--secondary);
 }
@@ -452,6 +452,9 @@ img[alt='leah']{
     text-align: left;
 }
 
+.centerBtn{
+    text-align: center;
+}
 
 #resume h4{
   color: var(--alternative); 
@@ -480,6 +483,7 @@ img[alt='leah']{
     color: var(--secondary);
 }
 
+/* Skills section */
 #skills{
     height: 100vh;
     background-color: transparent;
@@ -504,6 +508,91 @@ img[alt='leah']{
     font-size: 18px;
 }
 
+/* Projects Section */
+#projects{
+    height: 200vh;
+    background-color: transparent;
+}
+
+#projects{
+    color: var(--primary);
+}
+
+#projects ul{
+    background-color: var(--primary);
+    width: 80%;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    border: 2px solid var(--alternative);
+}
+
+#projects li{
+    padding: 8px 32px;
+}
+
+:is(.nav-pills .nav-item .active){
+    background-color: var(--alternative);
+}
+
+/* Card  */
+.card{
+    width: 28em;
+    height: 20em;
+    position: relative;
+    margin: 0 1em;
+    background-size: cover;
+    color: #fff;
+    box-shadow: #000 0px 11px 15px 0px;   
+}
+
+.card .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(187, 0, 255, 0.8);
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+.card:hover .overlay {opacity: 1;}
+
+.card .btn{
+    padding: 0.6em 1.3em;
+    text-decoration: none;
+    color: #fff;
+    border: 2px #fff solid;
+    letter-spacing: 1px;
+}
+
+.card .btn:hover{
+    background: rgba(255, 255,255, 0.3);
+}
+
+.card .btn, .card h1{
+    transition: 0.3s;
+    transform: translateY(-20px);
+}
+
+.card:hover .btn, .card:hover h1{
+    transform: translateY(0);
+}
+
+.projectsDiv{
+    width: 79vw;
+    height: 90vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+   flex-wrap: wrap;
+}
 
 /* Media query */
 @media (width < 999px)
@@ -570,7 +659,7 @@ img[alt='leah']{
     }
    
     #resume{
-        height: 110vh;
+        height: 120vh;
     }
     .resText{
         width: 80vw;
@@ -593,5 +682,6 @@ img[alt='leah']{
         width: 80vw;
         text-align: center;
     }
+
 }
 
