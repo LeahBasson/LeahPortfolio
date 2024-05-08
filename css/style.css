@@ -510,8 +510,9 @@ img[alt='leah']{
 
 /* Projects Section */
 #projects{
-    height: 200vh;
+    height: 330vh;
     background-color: transparent;
+    font-family: "Montserrat", sans-serif;
 }
 
 #projects{
@@ -535,54 +536,69 @@ img[alt='leah']{
 }
 
 /* Card  */
-.card{
-    width: 28em;
-    height: 20em;
+.cardDkt {
     position: relative;
-    margin: 0 1em;
-    background-size: cover;
-    color: #fff;
-    box-shadow: #000 0px 11px 15px 0px;   
+    width: 100%;
+    color: var(--secondary);
+    box-shadow: #000 0px 11px 15px 0px; 
+    border: 1px solid var(--alternative);
 }
 
-.card .overlay{
+.cardDkt .card-img-top {
+    display: block;
+    width: 100%;
+    height: 55vh;
+}
+
+.cardDkt .card-img-overlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
+    bottom: 0; /* Change this to 0 to hide the overlay initially */
     top: 0;
     left: 0;
+    right: 0;
+    background-color: var(--primary);
+    overflow: hidden;
     width: 100%;
-    height: 100%;
-    background: rgba(187, 0, 255, 0.8);
+    height: 0;
+    transition: .5s ease;
     opacity: 0;
-    transition: 0.3s;
-    border-radius: 6px;
 }
 
-.card:hover .overlay {opacity: 1;}
-
-.card .btn{
-    padding: 0.6em 1.3em;
-    text-decoration: none;
-    color: #fff;
-    border: 2px #fff solid;
-    letter-spacing: 1px;
+.cardDkt:hover .card-img-overlay {
+    bottom: 100%; /* Show the overlay on hover */
+    height: 100%;
+    opacity: 1;
 }
 
-.card .btn:hover{
-    background: rgba(255, 255,255, 0.3);
+.cardDkt .card-title .card-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-.card .btn, .card h1{
-    transition: 0.3s;
-    transform: translateY(-20px);
+.cardDkt .btn-outline-card{
+    border: 2px solid var(--alternative);
+    color: var(--secondary);
+    padding: 8px 30px;
 }
 
-.card:hover .btn, .card:hover h1{
-    transform: translateY(0);
+.cardDkt .btn-outline-card:hover{
+    background-color: var(--alternative);
+    border: 2px solid var(--secondary);
 }
+
+.Mobile{
+    display: none;
+}
+
 
 .projectsDiv{
     width: 79vw;
@@ -675,7 +691,7 @@ img[alt='leah']{
     }
 
     #skills{
-        height: 160vh;
+        height: 150vh;
     }
 
     .skillsText{
@@ -683,5 +699,12 @@ img[alt='leah']{
         text-align: center;
     }
 
+    .cardDkt{
+        display: none;
+    }
+
+    .Mobile{
+        display: block;
+    }
 }
 
