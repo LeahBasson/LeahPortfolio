@@ -91,9 +91,9 @@
              <div class="Greeting p-5">
               <h1 class="display-3 fw-bold text-white">Hi I'm <span>Leah Basson</span></h1>
               <h3 class="lh-lg">Developer</h3>
-              <a class="lnk text-white" href="mailto:your-email@example.com" alt="outlook icon"><i class="bi bi-envelope"></i></a>
-              <a class="lnk text-white" href="https://www.linkedin.com/in/leah-basson-23a4192a0" alt="linkedin icon"><i class="bi bi-linkedin"></i></a>
-              <a class="lnk text-white" href="https://github.com/LeahBasson"><i class="bi bi-github"></i></a>
+              <a class="lnk text-white" href="mailto:your-email@example.com" alt="outlook icon" target="_blank"><i class="bi bi-envelope"></i></a>
+              <a class="lnk text-white" href="https://www.linkedin.com/in/leah-basson-23a4192a0" alt="linkedin icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a class="lnk text-white" href="https://github.com/LeahBasson" target="_blank"><i class="bi bi-github"></i></a>
              </div>
              </div>
              
@@ -128,7 +128,7 @@
                   <p class="fw-bold">Business Studies - 74%</p>
                   <p class="fw-bold">Afrikaans - 72% </p>
                   <div class="centerBtn">
-                    <button class="btnResume mt-3"><a href="https://drive.google.com/file/d/1exorNcqzUvKOmfzbMyCoTzGusuaPRkKM/view?usp=drive_link/your-cv.pdf" download id="download-link">Download my CV</a></button>
+                    <button class="btnResume mt-3"><a href="https://drive.google.com/uc?export=download&id=1exorNcqzUvKOmfzbMyCoTzGusuaPRkKM" id="download-link">Download my CV</a></button>
                   </div>
                 
 
@@ -168,36 +168,36 @@
         <section class="container-fluid" id="projects">
             <div class="row">
                 <h2 class="display-3 text-black fadeInUp secHeading mt-4">Projects</h2>
-                <ul class="nav nav-pills mb-3 d-flex justify-content-center mt-4" id="pills-tab" role="tablist">
+                <ul class="nav nav-pills d-flex justify-content-center mt-4" id="pills-tab" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link text-white fs-5 show active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+                    <button class="nav-link text-white show active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link text-white fs-5" id="pills-artwork-tab" data-bs-toggle="pill" data-bs-target="#pills-artwork" type="button" role="tab" aria-controls="pills-artwork" aria-selected="false">Digital Artwork</button>
+                    <button class="nav-link text-white" id="pills-artwork-tab" data-bs-toggle="pill" data-bs-target="#pills-artwork" type="button" role="tab" aria-controls="pills-artwork" aria-selected="false">Digital Artwork</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link text-white fs-5" id="pills-advert-tab" data-bs-toggle="pill" data-bs-target="#pills-advert" type="button" role="tab" aria-controls="pills-advert" aria-selected="false">Advertisement</button>
+                    <button class="nav-link text-white" id="pills-advert-tab" data-bs-toggle="pill" data-bs-target="#pills-advert" type="button" role="tab" aria-controls="pills-advert" aria-selected="false">Advertisement</button>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <button class="nav-link text-white fs-5" id="pills-design-tab" data-bs-toggle="pill" data-bs-target="#pills-design" type="button" role="tab" aria-controls="pills-design" aria-selected="false">Design</button>
+                    <button class="nav-link text-white" id="pills-design-tab" data-bs-toggle="pill" data-bs-target="#pills-design" type="button" role="tab" aria-controls="pills-design" aria-selected="false">Design</button>
                   </li>
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
 
+                  <!-- All Projects -->
                   <div class="tab-pane fade show active projectsDiv" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
                     
-                    
-                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="row row-cols-1 row-cols-md-2">
                       <!-- Desktop cards -->
                       <div class="col">
                         <div class="cardDkt">
                           <img src="https://leahbasson.github.io/MyImages/images/Island.png" class="card-img-top" alt="project1" loading="lazy">
                           <div class="card-img-overlay">
-                            <h5 class="card-title fs-2">Island</h5>
+                            <h5 class="card-title fs-2 fw-bold">Island</h5>
                             <p class="card-text mt-1">Island with dragons from How To Train A Dragon Movie with night background.</p>
                             <div>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                              <a href="https://github.com/LeahBasson/islandArtwork.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://island-artwork.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
                             </div>
                            
                           </div>
@@ -209,11 +209,11 @@
                         <div class="cardDkt">
                           <img src="https://leahbasson.github.io/MyImages/images/HomeDecorLogo2.png" class="card-img-top" alt="project2" loading="lazy">
                           <div class="card-img-overlay">
-                            <h5 class="card-title fs-2">Home Decor Logo</h5>
+                            <h5 class="card-title fs-2 fw-bold">Home Decor Logo</h5>
                             <p class="card-text mt-1 mx-4">Logo for Home Decor website called Serene Decor. The slogan is 'mi Casa su Casa' which means my home is your home.</p>
                             <div>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                              <a href="https://github.com/LeahBasson/homeDecor.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://home-decor-neon.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
                             </div>
                           </div>
                         </div>
@@ -223,11 +223,11 @@
                         <div class="cardDkt">
                           <img src="https://leahbasson.github.io/MyImages/images/MovieLogo.png" class="card-img-top" alt="project3" loading="lazy">
                           <div class="card-img-overlay">
-                            <h5 class="card-title fs-2">Cinema Logo</h5>
+                            <h5 class="card-title fs-2 fw-bold">Cinema Logo</h5>
                             <p class="card-text mt-1 mx-4">Logo for Cinema Website called Movie Block that I made last year at College Of Cape Town using Visual Studio.</p>
                             <div>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                              <a href="https://github.com/LeahBasson/cinemaLogo.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://cinema-logo.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
                             </div>
                           </div>
                         </div>
@@ -237,12 +237,12 @@
                         <div class="cardDkt">
                           <img src="https://leahbasson.github.io/MyImages/images/sun-eco-travel-logo.png" class="card-img-top" alt="project4" loading="lazy">
                           <div class="card-img-overlay">
-                            <h5 class="card-title fs-2">Sun Eco Travel Logo</h5>
+                            <h5 class="card-title fs-2 fw-bold">Sun Eco Travel Logo</h5>
                             <p class="card-text mt-1">Logo for a travelling website.
                             </p>
                             <div>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                              <a href="https://github.com/LeahBasson/sunEcoLogo.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://sun-eco-logo.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
                             </div>
                           </div>
                         </div>
@@ -252,11 +252,11 @@
                         <div class="cardDkt">
                           <img src="https://leahbasson.github.io/MyImages/images/Aqua.png" class="card-img-top" alt="project5" loading="lazy">
                           <div class="card-img-overlay">
-                            <h5 class="card-title fs-2">Aqua</h5>
+                            <h5 class="card-title fs-2 fw-bold">Aqua</h5>
                             <p class="card-text mt-1">Text Effect with liquid.</p>
                             <div>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                              <a href="https://github.com/LeahBasson/aqua.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://aqua-black.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
                             </div>
                           </div>
                         </div>
@@ -266,11 +266,249 @@
                         <div class="cardDkt">
                           <img src="https://leahbasson.github.io/MyImages/images/boyAndSand.png" class="card-img-top" alt="project6" loading="lazy">
                           <div class="card-img-overlay">
-                            <h5 class="card-title fs-2">Boy and sand</h5>
+                            <h5 class="card-title fs-2 fw-bold">Boy and sand</h5>
                             <p class="card-text mt-1">Playing around with text in Adobe Photoshop.</p>
                             <div>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                              <a href="https://github.com/LeahBasson/boyAndSand.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://boy-and-sand.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="cardDkt">
+                          <img src="https://leahbasson.github.io/MyImages/images/easter.png" class="card-img-top" alt="project7" loading="lazy">
+                          <div class="card-img-overlay">
+                            <h5 class="card-title fs-2 fw-bold">Easter</h5>
+                            <p class="card-text mt-1">This was made in Adobe Photoshop.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/easter.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://easter-jet.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="cardDkt">
+                          <img src="https://leahbasson.github.io/MyImages/images/logo for task.jpg" class="card-img-top" alt="project8" loading="lazy">
+                          <div class="card-img-overlay">
+                            <h5 class="card-title fs-2 fw-bold">Takealot Redesign</h5>
+                            <p class="card-text mt-1">I was assigned a task to remake the Takealot Logo.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/takealot.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://takealot-coral.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="cardDkt">
+                          <img src="https://leahbasson.github.io/MyImages/images/tAdvert.png" class="card-img-top" alt="project9" loading="lazy">
+                          <div class="card-img-overlay">
+                            <h5 class="card-title fs-2 fw-bold">Golden Grills Advert</h5>
+                            <p class="card-text mt-1">I designed an advert for my brother's market day.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/tAdvert.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://t-advert.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="cardDkt">
+                          <img src="https://leahbasson.github.io/MyImages/images/Calculator.png" class="card-img-top" alt="project10" loading="lazy">
+                          <div class="card-img-overlay">
+                            <h5 class="card-title fs-2 fw-bold">Calculator</h5>
+                            <p class="card-text mt-1 mx-4">I was assigned a task to make a calculator using only css and html , no javascript.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/Calculator.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://calculator-gold-chi.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Mobile Card -->
+                      <div class="col">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/Island.png" class="card-img-top" alt="project1" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Island</h5>
+                            <p class="card-text">Island with dragons from How To Train A Dragon Movie with night background.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/islandArtwork" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://island-artwork.vercel.app/" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/HomeDecorLogo2.png" class="card-img-top border-bottom border-black" alt="project2" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Home Decor Logo</h5>
+                            <p class="card-text">Logo for Home Decor website called Serene Decor. The slogan is 'mi Casa su Casa' which means my home is your home.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/homeDecor.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://home-decor-neon.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/MovieLogo.png" class="card-img-top border-bottom border-black" alt="project3" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Cinema Logo</h5>
+                            <p class="card-text">Logo for Cinema Website called Movie Block that I made last year at College Of Cape Town using Visual Studio.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/cinemaLogo.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://cinema-logo.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/sun-eco-travel-logo.png" class="card-img-top border-bottom border-black" alt="project4" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Sun Eco Travel Logo</h5>
+                            <p class="card-text">Logo for a travelling website.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/sunEcoLogo.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://sun-eco-logo.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/Aqua.png" class="card-img-top border-bottom border-black" alt="project5" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Aqua</h5>
+                            <p class="card-text">Text Effect with liquid.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/aqua.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://aqua-black.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/boyAndSand.png" class="card-img-top border-bottom border-black" alt="project6" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Boy and sand</h5>
+                            <p class="card-text">Playing around with text in Adobe Photoshop.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/boyAndSand.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://boy-and-sand.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/easter.png" class="card-img-top border-bottom border-black" alt="project7" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Easter</h5>
+                            <p class="card-text">This was made in Adobe Photoshop.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/easter.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://easter-jet.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+		                	</div>
+
+                      <div class="col">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/logo for task.jpg" class="card-img-top border-bottom border-black" alt="project8" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Takealot Redesign</h5>
+                            <p class="card-text">Takealot Redesign</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/takealot.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://takealot-coral.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/tAdvert.png" class="card-img-top border-bottom border-black" alt="project9" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Golden Grills Advert</h5>
+                            <p class="card-text">I designed an advert for my brother's market day.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/tAdvert.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                          <a href="https://t-advert.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/Calculator.png" class="card-img-top border-bottom border-black" alt="project10" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Calculator</h5>
+                            <p class="card-text">I was assigned a task to make a calculator using only css and html , no javascript.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/Calculator.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                        <a href="https://calculator-gold-chi.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+
+                    </div>
+                  </div>
+                    
+
+                  <!-- Digital Artwork -->
+                  <div class="tab-pane fade projectsDiv" id="pills-artwork" role="tabpanel" aria-labelledby="pills-artwork-tab">
+                    <div class="row row-cols-1 row-cols-md-2">
+                     
+                      <!-- Desktop cards -->
+                      <div class="col">
+                        <div class="cardDkt">
+                          <img src="https://leahbasson.github.io/MyImages/images/Island.png" class="card-img-top" alt="project1" loading="lazy">
+                          <div class="card-img-overlay">
+                            <h5 class="card-title fs-2">Island</h5>
+                            <p class="card-text mt-1">Island with dragons from How To Train A Dragon Movie with night background.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/islandArtwork.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://island-artwork.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                           
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="col">
+                        <div class="cardDkt">
+                          <img src="https://leahbasson.github.io/MyImages/images/Aqua.png" class="card-img-top" alt="project5" loading="lazy">
+                          <div class="card-img-overlay">
+                            <h5 class="card-title fs-2">Aqua</h5>
+                            <p class="card-text mt-1">Text Effect with liquid.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/aqua.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://aqua-black.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
                             </div>
                           </div>
                         </div>
@@ -283,40 +521,170 @@
                             <h5 class="card-title fs-2">Easter</h5>
                             <p class="card-text mt-1">This was made in Adobe Photoshop.</p>
                             <div>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                              <a href="https://github.com/LeahBasson/easter.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://easter-jet.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Mobile Card -->
+                      <div class="col">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/Island.png" class="card-img-top" alt="project1" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Island</h5>
+                            <p class="card-text">Island with dragons from How To Train A Dragon Movie with night background.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/islandArtwork" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://island-artwork.vercel.app/" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
                             </div>
                           </div>
                         </div>
                       </div>
 
                       <div class="col">
-                        <div class="cardDkt">
-                          <img src="https://leahbasson.github.io/MyImages/images/logo for task.jpg" class="card-img-top" alt="project8" loading="lazy">
-                          <div class="card-img-overlay">
-                            <h5 class="card-title fs-2">Takealot Redesign</h5>
-                            <p class="card-text mt-1">I was assigned a task to remake the Takealot Logo.</p>
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/Aqua.png" class="card-img-top border-bottom border-black" alt="project5" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Aqua</h5>
+                            <p class="card-text">Text Effect with liquid.</p>
                             <div>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                              <a href="https://github.com/LeahBasson/aqua.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://aqua-black.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
                             </div>
                           </div>
                         </div>
                       </div>
 
                       <div class="col">
-                        <div class="cardDkt">
-                          <img src="https://leahbasson.github.io/MyImages/images/tAdvert.png" class="card-img-top" alt="project9" loading="lazy">
-                          <div class="card-img-overlay">
-                            <h5 class="card-title fs-2">Golden Grills Advert</h5>
-                            <p class="card-text mt-1">I designed an advert for my brother's market day.</p>
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/easter.png" class="card-img-top border-bottom border-black" alt="project7" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Easter</h5>
+                            <p class="card-text">This was made in Adobe Photoshop.</p>
                             <div>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                              <a href="https://github.com/LeahBasson/easter.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://easter-jet.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
                             </div>
                           </div>
                         </div>
+			                </div>
+
+
                       </div>
+                  </div>
+
+                  <!-- Advertisement -->
+                  <div class="tab-pane fade" id="pills-advert" role="tabpanel" aria-labelledby="pills-advert-tab">
+                    <div class="row row-cols-1 row-cols-md-2 projectsDiv justify-content-start">
+                      
+                    <div class="col">
+                      <div class="cardDkt">
+                        <img src="https://leahbasson.github.io/MyImages/images/tAdvert.png" class="card-img-top" alt="project9" loading="lazy">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title fs-2">Golden Grills Advert</h5>
+                          <p class="card-text mt-1">I designed an advert for my brother's market day.</p>
+                          <div>
+                            <a href="https://github.com/LeahBasson/tAdvert.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                            <a href="https://t-advert.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-11 mx-auto">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/tAdvert.png" class="card-img-top border-bottom border-black" alt="project9" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Golden Grills Advert</h5>
+                            <p class="card-text">I designed an advert for my brother's market day.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/tAdvert.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                          <a href="https://t-advert.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <!-- Design -->
+                  <div class="tab-pane fade projectsDiv" id="pills-design" role="tabpanel" aria-labelledby="pills-design-tab">
+                    <div class="row row-cols-1 row-cols-md-2">
+
+                    <div class="col">
+                      <div class="cardDkt">
+                        <img src="https://leahbasson.github.io/MyImages/images/HomeDecorLogo2.png" class="card-img-top" alt="project2" loading="lazy">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title fs-2">Home Decor Logo</h5>
+                          <p class="card-text mt-1 mx-4">Logo for Home Decor website called Serene Decor. The slogan is 'mi Casa su Casa' which means my home is your home.</p>
+                          <div>
+                            <a href="https://github.com/LeahBasson/homeDecor.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://home-decor-neon.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="cardDkt">
+                        <img src="https://leahbasson.github.io/MyImages/images/MovieLogo.png" class="card-img-top" alt="project3" loading="lazy">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title fs-2">Cinema Logo</h5>
+                          <p class="card-text mt-1 mx-4">Logo for Cinema Website called Movie Block that I made last year at College Of Cape Town using Visual Studio.</p>
+                          <div>
+                            <a href="https://github.com/LeahBasson/cinemaLogo.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                            <a href="https://cinema-logo.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="cardDkt">
+                        <img src="https://leahbasson.github.io/MyImages/images/sun-eco-travel-logo.png" class="card-img-top" alt="project4" loading="lazy">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title fs-2">Sun Eco Travel Logo</h5>
+                          <p class="card-text mt-1">Logo for a travelling website.
+                          </p>
+                          <div>
+                            <a href="https://github.com/LeahBasson/sunEcoLogo.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                            <a href="https://sun-eco-logo.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="cardDkt">
+                        <img src="https://leahbasson.github.io/MyImages/images/boyAndSand.png" class="card-img-top" alt="project6" loading="lazy">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title fs-2">Boy and sand</h5>
+                          <p class="card-text mt-1">Playing around with text in Adobe Photoshop.</p>
+                          <div>
+                            <a href="https://github.com/LeahBasson/boyAndSand.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                            <a href="https://boy-and-sand.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="cardDkt">
+                        <img src="https://leahbasson.github.io/MyImages/images/logo for task.jpg" class="card-img-top" alt="project8" loading="lazy">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title fs-2">Takealot Redesign</h5>
+                          <p class="card-text mt-1">I was assigned a task to remake the Takealot Logo.</p>
+                          <div>
+                            <a href="https://github.com/LeahBasson/takealot.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                            <a href="https://takealot-coral.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
                       <div class="col">
                         <div class="cardDkt">
@@ -325,55 +693,99 @@
                             <h5 class="card-title fs-2">Calculator</h5>
                             <p class="card-text mt-1 mx-4">I was assigned a task to make a calculator using only css and html , no javascript.</p>
                             <div>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
-                              <a href="#" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                              <a href="https://github.com/LeahBasson/Calculator.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://calculator-gold-chi.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <!-- Mobile Cards -->
+                      <!-- Mobile Card -->
                       <div class="col">
                         <div class="card Mobile">
-                          <img src="https://leahbasson.github.io/MyImages/images/amsterdam7.jpg" class="card-img-top" alt="project1">
+                          <img src="https://leahbasson.github.io/MyImages/images/HomeDecorLogo2.png" class="card-img-top border-bottom border-black" alt="project2" loading="lazy">
                           <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title fs-2 fw-bold">Home Decor Logo</h5>
+                            <p class="card-text">Logo for Home Decor website called Serene Decor. The slogan is 'mi Casa su Casa' which means my home is your home.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/homeDecor.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://home-decor-neon.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col">
-                        <div class="card Mobile">
-                          <img src="..." class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="card Mobile">
-                          <img src="..." class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
 
-                  <div class="tab-pane fade" id="pills-artwork" role="tabpanel" aria-labelledby="pills-artwork-tab">
-                    <h3>Digital Artwork</h3>
-                  </div>
-                  <div class="tab-pane fade" id="pills-advert" role="tabpanel" aria-labelledby="pills-advert-tab">
-                   <h3>Advertisement</h3> 
-                  </div>
-                  <div class="tab-pane fade" id="pills-design" role="tabpanel" aria-labelledby="pills-design-tab">
-                    <h3>Logo</h3> 
+                      <div class="col">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/MovieLogo.png" class="card-img-top border-bottom border-black" alt="project3" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Cinema Logo</h5>
+                            <p class="card-text">Logo for Cinema Website called Movie Block that I made last year at College Of Cape Town using Visual Studio.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/cinemaLogo.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://cinema-logo.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/sun-eco-travel-logo.png" class="card-img-top border-bottom border-black" alt="project4" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Sun Eco Travel Logo</h5>
+                            <p class="card-text">Logo for a travelling website.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/sunEcoLogo.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://sun-eco-logo.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/boyAndSand.png" class="card-img-top border-bottom border-black" alt="project6" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Boy and sand</h5>
+                            <p class="card-text">Playing around with text in Adobe Photoshop.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/boyAndSand.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://boy-and-sand.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/logo for task.jpg" class="card-img-top border-bottom border-black" alt="project8" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Takealot Redesign</h5>
+                            <p class="card-text">Takealot Redesign</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/takealot.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                              <a href="https://takealot-coral.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card Mobile">
+                          <img src="https://leahbasson.github.io/MyImages/images/Calculator.png" class="card-img-top border-bottom border-black" alt="project10" loading="lazy">
+                          <div class="card-body">
+                            <h5 class="card-title fs-2 fw-bold">Calculator</h5>
+                            <p class="card-text">I was assigned a task to make a calculator using only css and html , no javascript.</p>
+                            <div>
+                              <a href="https://github.com/LeahBasson/Calculator.git" target="_blank" class="btn btn-outline-card mt-3 mx-2">Repo Link</a>
+                        <a href="https://calculator-gold-chi.vercel.app" target="_blank" class="btn btn-outline-card mt-3 mx-2">Hosted Link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                   
+                    </div>
                    </div>
               
                 </div>
@@ -382,7 +794,7 @@
 
         <section class="container" id="testimonials">
             <div class="row">
-                <h2 class="display-2"></h2>
+                <h2 class="display-2">Testimonials</h2>
             </div>
         </section>
         <section class="container" id="reachMe">

@@ -528,6 +528,7 @@ img[alt='leah']{
 }
 
 #projects li{
+    font-size: 1.3rem;
     padding: 8px 32px;
 }
 
@@ -542,6 +543,7 @@ img[alt='leah']{
     color: var(--secondary);
     box-shadow: #000 0px 11px 15px 0px; 
     border: 1px solid var(--alternative);
+    margin-top: 1.4rem;
 }
 
 .cardDkt .card-img-top {
@@ -599,11 +601,9 @@ img[alt='leah']{
     display: none;
 }
 
-
 .projectsDiv{
     width: 79vw;
     height: 90vh;
-    background-color: transparent;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -691,7 +691,7 @@ img[alt='leah']{
     }
 
     #skills{
-        height: 150vh;
+        height: 160vh;
     }
 
     .skillsText{
@@ -705,6 +705,44 @@ img[alt='leah']{
 
     .Mobile{
         display: block;
+    }
+
+    #projects{
+        background-color: transparent;
+        height: 810vh;
+    }
+
+    #projects ul{
+        width: 100%;
+    }
+    
+    #projects li{
+        padding: 8px 1px;
+        font-size: 1.2rem;
+    }
+
+    .projectsDiv{
+        display: none;
+    }
+
+    .Mobile{
+        margin-top: 2rem;
+    }
+
+    .Mobile .btn-outline-card{
+        border: 2px solid var(--alternative);
+        color: var(--primary);
+        padding: 8px 30px;
+    }
+
+    .Mobile .btn-outline-card:hover{
+        background-color: var(--alternative);
+        border: 2px solid var(--secondary);
+        color: var(--secondary);
+    }
+
+    .card{
+        border: 1px solid var(--primary);
     }
 }
 
