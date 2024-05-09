@@ -389,7 +389,6 @@ img[alt='leah']{
 
 .lnk i {
     font-size: 1.4rem;
-    border-radius: 50%;
     padding: 8px 12px;
 }
 
@@ -446,7 +445,7 @@ img[alt='leah']{
 
 .resText{
     width: 70vw;
-    height: 80vh;
+    height: auto;
     background-color: transparent;
     margin: auto;
     text-align: left;
@@ -458,6 +457,7 @@ img[alt='leah']{
 
 #resume h4{
   color: var(--alternative); 
+  margin-top: 2rem;
 }
 
 #resume p{
@@ -491,7 +491,7 @@ img[alt='leah']{
 
 .skillsText{
     width: 70vw;
-    height: 70vh;
+    height: auto;
     margin: auto;
     text-align: left;
 }
@@ -510,7 +510,7 @@ img[alt='leah']{
 
 /* Projects Section */
 #projects{
-    height: 330vh;
+    height: auto;
     background-color: transparent;
     font-family: "Montserrat", sans-serif;
 }
@@ -603,19 +603,57 @@ img[alt='leah']{
 
 .projectsDiv{
     width: 79vw;
-    height: 90vh;
+    height: auto;
     display: flex;
     justify-content: center;
     margin: auto;
    flex-wrap: wrap;
 }
 
+#testimonials{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    font-family: "Montserrat", sans-serif;
+}
+
+.testimonialCard{
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+  .testimonial {
+    width: 25vw;
+    padding: 20px;
+    margin: 13px;
+    text-align: center;
+    border: 1px solid var(--alternative);
+  }
+  
+  .testimonial img {
+    width: 10rem;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 1px solid var(--alternative);
+  }
+  
+  .testimonial p {
+    font-style: italic;
+  }
+  
+  .testimonial h3 {
+    margin: 0;
+  }
+
+
 /* Media query */
 @media (width < 999px)
 {
     #home{
         width: 100%;
-        height: 100vh;
+        height: auto;
     }
     
     .stars{
@@ -624,7 +662,7 @@ img[alt='leah']{
 
     .banner{
     width: 80vw;
-    height: 95vh;
+    height: auto;
     background-color: transparent;
     z-index: 2;
     display: flex;
@@ -638,24 +676,24 @@ img[alt='leah']{
     }
 
     .Greeting{
-        width: 80vw;
-        height: 80vh;
+        width: 100vw;
+        height: auto;
         background-color: transparent;
         order: 1;
         text-align: center;
     }
 
     .Greeting h1{
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         text-align: center;
     }
     
     .Greeting h1 span{
-      font-size: 2.1rem;
+      font-size: 1.2rem;
     }
     
     .Greeting h3{
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         text-align: center;
         font-weight: 100;
     }
@@ -664,34 +702,49 @@ img[alt='leah']{
        display: none;
     }
 
-    #about{
-        height: 75vh;
+    .lnk i {
+        font-size: 1.2rem;
+        padding: 8px 12px;
+    }
+
+   #about{
+        height: auto;
     }
 
     #about p{
         width: 80vw;
-        height: 50vh;
-        font-size: 17px;
+        height: auto;
+        font-size: 1rem;
     }
    
-    #resume{
-        height: 120vh;
+ #resume{
+        height: auto;
     }
     .resText{
         width: 80vw;
         text-align: center;
     }
 
+    #resume h2{
+        margin-top: 1rem;
+    }
     #resume h4{
-        font-size: 20px;
+        font-size: o.8rem;
     }
 
     #resume p{
-        font-size: 17px;
+        font-size: 1rem;
     }
 
-    #skills{
-        height: 160vh;
+    .btnResume{
+        margin-top: 0;
+        font-size: 1rem;
+        padding: 5px 32px;
+        margin-bottom: 1rem ;
+    }
+
+     #skills{
+        height: auto;
     }
 
     .skillsText{
@@ -699,7 +752,15 @@ img[alt='leah']{
         text-align: center;
     }
 
-    .cardDkt{
+    #skills h4{
+        font-size: 1.2rem;
+    }
+
+    #skills p{
+        font-size:1rem;
+    }
+
+  .cardDkt{
         display: none;
     }
 
@@ -709,16 +770,16 @@ img[alt='leah']{
 
     #projects{
         background-color: transparent;
-        height: 810vh;
+        height: auto;
     }
 
     #projects ul{
-        width: 100%;
+        width: 80%;
     }
     
     #projects li{
-        padding: 8px 1px;
-        font-size: 1.2rem;
+        padding: 1px 1px;
+        font-size: 0.9rem;
     }
 
     .projectsDiv{
@@ -743,6 +804,21 @@ img[alt='leah']{
 
     .card{
         border: 1px solid var(--primary);
+    } 
+
+    .testimonialCard{
+        display: flex;
+        background-color: transparent;
+        justify-content: center;
+        flex-direction: column;
     }
+
+    .testimonial {
+        width: 90%;
+        padding: 20px;
+        margin: 13px;
+        text-align: center;
+        border: 1px solid var(--alternative);
+      }
 }
 
