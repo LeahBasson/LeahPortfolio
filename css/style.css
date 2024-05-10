@@ -63,7 +63,6 @@ img[alt='logo']{
         transform: scale(1.2);
     }
 }
-
 /* Navbar */
 .navbar-nav .nav-link:hover{
     color: var(--alternative);
@@ -92,7 +91,7 @@ section {
 /* Home Section */
 
 #home{
-    height: 90vh;
+    height: auto;
     background-color: var(--primary);
 }
 
@@ -327,7 +326,7 @@ div .star{
 
 .banner{
     width: 71vw;
-    height: 70vh;
+    height: auto;
     background-color: transparent;
     z-index: 2;
     display: flex;
@@ -389,6 +388,7 @@ img[alt='leah']{
 
 .lnk i {
     font-size: 1.4rem;
+    border-radius: 50%;
     padding: 8px 12px;
 }
 
@@ -407,9 +407,13 @@ img[alt='leah']{
 
 /* About Section */
 #about{
-    height: 50vh;
+    height: auto;
     background-color: var(--primary);
     text-align: center;
+}
+
+#about h2{
+    margin-top: 6rem;
 }
 
 .fadeInUp{
@@ -438,14 +442,14 @@ img[alt='leah']{
 
 /* Resume Section*/
 #resume{
-    height: 100vh;
+    height: auto;
     background-color: var(--primary);
     text-align: center;
 }
 
 .resText{
     width: 70vw;
-    height: auto;
+    height: 80vh;
     background-color: transparent;
     margin: auto;
     text-align: left;
@@ -456,8 +460,8 @@ img[alt='leah']{
 }
 
 #resume h4{
+    margin-top: 2rem;
   color: var(--alternative); 
-  margin-top: 2rem;
 }
 
 #resume p{
@@ -485,7 +489,7 @@ img[alt='leah']{
 
 /* Skills section */
 #skills{
-    height: 100vh;
+    height: auto;
     background-color: transparent;
 }
 
@@ -617,6 +621,10 @@ img[alt='leah']{
     font-family: "Montserrat", sans-serif;
 }
 
+#testimonials h2{
+    margin-top: 5rem;
+}
+
 .testimonialCard{
     display: flex;
     background-color: transparent;
@@ -657,8 +665,7 @@ img[alt='leah']{
   }
 
   .contact-content{
-    width: 50vw;
-    background-color: transparent;
+    width: 55vw;
   }
 
   .contact-content img{
@@ -666,7 +673,7 @@ img[alt='leah']{
     height: auto;
     border-radius: 50%;
     border: 2px solid var(--secondary);
-    margin-top: 2rem;;
+    margin-top: 2rem;
   }
 
   .contactP{
@@ -676,9 +683,12 @@ img[alt='leah']{
   }
 
   .formsDiv{
-    width: 45vw;
-    background-color: transparent;
+    width: 40vw;
     font-family: "Montserrat", sans-serif;
+  }
+
+  .formsDiv h2{
+    margin-top: 2rem;
   }
 
   #contactForm{
@@ -697,7 +707,7 @@ img[alt='leah']{
     border: 2px solid var(--alternative);
   }
 
-  textarea[class=form-control]:focus{
+  textarea[id=message]:focus{
     border: 2px solid var(--alternative);
   }
 
@@ -714,6 +724,7 @@ img[alt='leah']{
     border: 2px solid var(--secondary);
   }
 
+
 /* Media query */
 @media (width < 999px)
 {
@@ -727,13 +738,13 @@ img[alt='leah']{
     }
 
     .banner{
-    width: 80vw;
-    height: auto;
-    background-color: transparent;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+        width: 80vw;
+        height: auto;
+        background-color: transparent;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     img[alt='leah']{
@@ -742,11 +753,17 @@ img[alt='leah']{
     }
 
     .Greeting{
-        width: 100vw;
+        width: 70vw;
+        margin: auto;
         height: auto;
         background-color: transparent;
         order: 1;
         text-align: center;
+    }
+
+    .lnk i {
+        font-size: 1.2rem;
+        padding: 2px 2px;
     }
 
     .Greeting h1{
@@ -755,7 +772,7 @@ img[alt='leah']{
     }
     
     .Greeting h1 span{
-      font-size: 1.2rem;
+      font-size: 2.1rem;
     }
     
     .Greeting h3{
@@ -768,14 +785,12 @@ img[alt='leah']{
        display: none;
     }
 
-    .lnk i {
-        font-size: 1.2rem;
-        padding: 8px 12px;
+    #about{
+        height: auto;
     }
 
-   #about{
-    width: 100%;
-        height: auto;
+    #about h2{
+        margin-top: 1rem;
     }
 
     #about p{
@@ -784,20 +799,22 @@ img[alt='leah']{
         font-size: 1rem;
     }
    
- #resume{
-    width: 100%;
+    #resume{
         height: auto;
     }
+    
     .resText{
         width: 80vw;
         text-align: center;
+        margin-bottom: 10rem;
     }
 
     #resume h2{
-        margin-top: 1rem;
+        margin-top: 5rem;
     }
+
     #resume h4{
-        font-size: o.8rem;
+        font-size: 1rem;
     }
 
     #resume p{
@@ -811,8 +828,7 @@ img[alt='leah']{
         margin-bottom: 1rem ;
     }
 
-     #skills{
-        width: 100%;
+    #skills{
         height: auto;
     }
 
@@ -822,14 +838,10 @@ img[alt='leah']{
     }
 
     #skills h4{
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
 
-    #skills p{
-        font-size:1rem;
-    }
-
-  .cardDkt{
+    .cardDkt{
         display: none;
     }
 
@@ -839,7 +851,6 @@ img[alt='leah']{
 
     #projects{
         background-color: transparent;
-        width: 100%;
         height: auto;
     }
 
@@ -848,8 +859,8 @@ img[alt='leah']{
     }
     
     #projects li{
-        padding: 1px 1px;
-        font-size: 0.9rem;
+        padding: 8px 1px;
+        font-size: 1.2rem;
     }
 
     .projectsDiv{
@@ -863,7 +874,7 @@ img[alt='leah']{
     .Mobile .btn-outline-card{
         border: 2px solid var(--alternative);
         color: var(--primary);
-        padding: 8px 30px;
+        width: 100%;
     }
 
     .Mobile .btn-outline-card:hover{
@@ -874,7 +885,7 @@ img[alt='leah']{
 
     .card{
         border: 1px solid var(--primary);
-    } 
+    }
 
     #testimonials{
         width: 100%;
@@ -882,10 +893,11 @@ img[alt='leah']{
     }
 
     .testimonialCard{
+        width: 88vw;
         display: flex;
-        background-color: transparent;
         justify-content: center;
-        flex-direction: column;
+        margin: auto;
+         flex-wrap: wrap;
     }
 
     .testimonial {
@@ -895,6 +907,36 @@ img[alt='leah']{
         text-align: center;
         border: 1px solid var(--alternative);
       }
-    
-}
 
+      .testimonial h3{
+        font-size: 1rem;
+      }
+
+      #reachMe{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+      .contact-content{
+        width: 100%;
+      }
+
+      .formsDiv{
+        width: 100%;
+      }
+
+      .formsDiv h2{
+        margin-top: 2rem;
+      }
+
+      .form-group{
+        width: 100%;
+        padding: 10px 42px;
+      }
+
+      .button1{
+        margin-bottom: 2rem;
+      }
+      
+}
