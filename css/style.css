@@ -63,7 +63,6 @@ img[alt='logo']{
         transform: scale(1.2);
     }
 }
-
 /* Navbar */
 .navbar-nav .nav-link:hover{
     color: var(--alternative);
@@ -92,7 +91,7 @@ section {
 /* Home Section */
 
 #home{
-    height: 90vh;
+    height: auto;
     background-color: var(--primary);
 }
 
@@ -327,7 +326,7 @@ div .star{
 
 .banner{
     width: 71vw;
-    height: 70vh;
+    height: auto;
     background-color: transparent;
     z-index: 2;
     display: flex;
@@ -408,9 +407,13 @@ img[alt='leah']{
 
 /* About Section */
 #about{
-    height: 50vh;
+    height: auto;
     background-color: var(--primary);
     text-align: center;
+}
+
+#about h2{
+    margin-top: 6rem;
 }
 
 .fadeInUp{
@@ -439,7 +442,7 @@ img[alt='leah']{
 
 /* Resume Section*/
 #resume{
-    height: 100vh;
+    height: auto;
     background-color: var(--primary);
     text-align: center;
 }
@@ -457,6 +460,7 @@ img[alt='leah']{
 }
 
 #resume h4{
+    margin-top: 2rem;
   color: var(--alternative); 
 }
 
@@ -485,13 +489,13 @@ img[alt='leah']{
 
 /* Skills section */
 #skills{
-    height: 100vh;
+    height: auto;
     background-color: transparent;
 }
 
 .skillsText{
     width: 70vw;
-    height: 70vh;
+    height: auto;
     margin: auto;
     text-align: left;
 }
@@ -510,7 +514,7 @@ img[alt='leah']{
 
 /* Projects Section */
 #projects{
-    height: 330vh;
+    height: auto;
     background-color: transparent;
     font-family: "Montserrat", sans-serif;
 }
@@ -603,19 +607,130 @@ img[alt='leah']{
 
 .projectsDiv{
     width: 79vw;
-    height: 90vh;
+    height: auto;
     display: flex;
     justify-content: center;
     margin: auto;
    flex-wrap: wrap;
 }
 
+#testimonials{
+    width: 100%;
+    height: auto;
+    background-color: var(--primary);
+    font-family: "Montserrat", sans-serif;
+}
+
+#testimonials h2{
+    margin-top: 5rem;
+}
+
+.testimonialCard{
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+  .testimonial {
+    width: 25vw;
+    padding: 20px;
+    margin: 13px;
+    text-align: center;
+    border: 2px solid var(--alternative);
+    background-color: var(--secondary);
+  }
+  
+  .testimonial img {
+    width: 10rem;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 1px solid var(--alternative);
+  }
+  
+  .testimonial p {
+    font-style: italic;
+  }
+  
+  .testimonial h3 {
+    margin: 0;
+  }
+
+  #reachMe{
+    width: 100%;
+    height: auto;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-content{
+    width: 55vw;
+  }
+
+  .contact-content img{
+    width: 15rem;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid var(--secondary);
+    margin-top: 2rem;
+  }
+
+  .contactP{
+    color: var(--secondary);
+    margin-top: 1rem;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .formsDiv{
+    width: 40vw;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .formsDiv h2{
+    margin-top: 2rem;
+  }
+
+  #contactForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .form-group{
+    width: 30vw;
+    padding: 10px 42px;
+  }
+
+  input[class=form-control]:focus{
+    border: 2px solid var(--alternative);
+  }
+
+  textarea[id=message]:focus{
+    border: 2px solid var(--alternative);
+  }
+
+  .button1{
+    background-color: transparent;
+    color: var(--secondary);
+    padding: 8px 32px;
+    border: 2px solid var(--alternative);
+    border-radius: 8px;
+  }
+
+  .button1:hover{
+    background-color: var(--alternative);
+    border: 2px solid var(--secondary);
+  }
+
+
 /* Media query */
 @media (width < 999px)
 {
     #home{
         width: 100%;
-        height: 100vh;
+        height: auto;
     }
     
     .stars{
@@ -623,13 +738,13 @@ img[alt='leah']{
     }
 
     .banner{
-    width: 80vw;
-    height: 95vh;
-    background-color: transparent;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+        width: 80vw;
+        height: auto;
+        background-color: transparent;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     img[alt='leah']{
@@ -638,15 +753,21 @@ img[alt='leah']{
     }
 
     .Greeting{
-        width: 80vw;
-        height: 80vh;
+        width: 70vw;
+        margin: auto;
+        height: auto;
         background-color: transparent;
         order: 1;
         text-align: center;
     }
 
+    .lnk i {
+        font-size: 1.2rem;
+        padding: 2px 2px;
+    }
+
     .Greeting h1{
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         text-align: center;
     }
     
@@ -655,7 +776,7 @@ img[alt='leah']{
     }
     
     .Greeting h3{
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         text-align: center;
         font-weight: 100;
     }
@@ -665,38 +786,58 @@ img[alt='leah']{
     }
 
     #about{
-        height: 75vh;
+        height: auto;
+    }
+
+    #about h2{
+        margin-top: 1rem;
     }
 
     #about p{
         width: 80vw;
-        height: 50vh;
-        font-size: 17px;
+        height: auto;
+        font-size: 1rem;
     }
    
     #resume{
-        height: 120vh;
+        height: auto;
     }
     .resText{
         width: 80vw;
         text-align: center;
+        margin-bottom: 10rem;
+    }
+
+    #resume h2{
+        margin-top: 5rem;
     }
 
     #resume h4{
-        font-size: 20px;
+        font-size: 1rem;
     }
 
     #resume p{
-        font-size: 17px;
+        font-size: 1rem;
+    }
+
+    .btnResume{
+        margin-top: 0;
+        font-size: 1rem;
+        padding: 5px 32px;
+        margin-bottom: 1rem ;
     }
 
     #skills{
-        height: 160vh;
+        height: auto;
     }
 
     .skillsText{
         width: 80vw;
         text-align: center;
+    }
+
+    #skills h4{
+        font-size: 1.7rem;
     }
 
     .cardDkt{
@@ -709,11 +850,11 @@ img[alt='leah']{
 
     #projects{
         background-color: transparent;
-        height: 810vh;
+        height: auto;
     }
 
     #projects ul{
-        width: 100%;
+        width: 80%;
     }
     
     #projects li{
@@ -732,7 +873,7 @@ img[alt='leah']{
     .Mobile .btn-outline-card{
         border: 2px solid var(--alternative);
         color: var(--primary);
-        padding: 8px 30px;
+        width: 100%;
     }
 
     .Mobile .btn-outline-card:hover{
@@ -744,5 +885,58 @@ img[alt='leah']{
     .card{
         border: 1px solid var(--primary);
     }
+
+    #testimonials{
+        width: 100%;
+        height: auto;
+    }
+
+    .testimonialCard{
+        width: 88vw;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+         flex-wrap: wrap;
+    }
+
+    .testimonial {
+        width: 90%;
+        padding: 20px;
+        margin: 13px;
+        text-align: center;
+        border: 1px solid var(--alternative);
+      }
+
+      .testimonial h3{
+        font-size: 1rem;
+      }
+
+      #reachMe{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+      .contact-content{
+        width: 100%;
+      }
+
+      .formsDiv{
+        width: 100%;
+      }
+
+      .formsDiv h2{
+        margin-top: 2rem;
+      }
+
+      .form-group{
+        width: 100%;
+        padding: 10px 42px;
+      }
+
+      .button1{
+        margin-bottom: 2rem;
+      }
+      
 }
 
